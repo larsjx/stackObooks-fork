@@ -1,8 +1,11 @@
 <article>
-  <form action="/posts/<%= @post.id %>/responses/new" method="">
-  <input class="btn btn-secondary post-response-button" type="submit" value="Add a response">
   <div id="<%= @post.id %>">
+  <% if current_user %>
+    <form action="/posts/<%= @post.id %>/responses/new" method="">
+    <input class="btn btn-secondary post-response-button" type="submit" value="Add a response">
+  <% end %>
       <div class="post-titles"><%= @post.title %></div>
+      <span class="response-author"><%= @post.user.username.capitalize %></span> | <span class="response-date"><%= @post.updated_at.strftime('%B %e, %Y') %>
       <br>
       <div class="post-bodies"><%= @post.body %></div>
       <br>

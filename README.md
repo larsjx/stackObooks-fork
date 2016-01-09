@@ -1,2 +1,2 @@
 # stackObooks-fork
-DBC team project of @larsjx, @misternu, @ugaliguy, @hazelmaeby
+DBC team project of @hazelmaeby, @larsjx, @misternu, @ugaliguy
