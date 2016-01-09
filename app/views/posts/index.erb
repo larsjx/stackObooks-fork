@@ -1,0 +1,9 @@
+<div class="container content-section" id="about">
+  <ul class="post-list">
+    <% @posts.each do |post| %>
+      <li><a class="post-titles" href = <%="/posts/#{post.id}"%> ><%= post.title %></a>
+        <br>
+        <p class="post-bodies"><%= post.body %></p></li>
+    <% end %>
+  </ul>
+</div>

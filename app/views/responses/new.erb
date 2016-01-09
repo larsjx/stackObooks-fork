@@ -1,0 +1,28 @@
+<div class="new-response container">
+<h3>Enter your response below</h3>
+  <article>
+    <% if @respondable.is_a?(Post) %>
+      <h2><%= @respondable.title %></h2>
+      <% route = "posts" %>
+    <% else %>
+      <% route = "responses" %>
+    <% end %>
+    <p><%= @respondable.body %></p>
+  </article>
+    <form method="post" action="/<%= route %>/<%= @respondable.id %>/responses">
+      <fieldset class="form-group">
+        <textarea class="form-control" name="body" rows=10 placeholder="Enter your response here"></textarea>
+      </fieldset>
+        <input class="btn btn-secondary" type="submit" value="Submit response">
+    </form>
+    <% if @errors %>
+      <div class="errors-wrapper">
+        <span>Your entry could not be saved:</span>
+        <ul class="errors">
+          <% @errors.each do |error| %>
+            <li class="error"><%= error %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+</div>

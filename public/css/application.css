@@ -1,0 +1,178 @@
+
+body { padding-top: 70px;}
+
+.content-section {
+  padding-top: 75px;
+}
+
+.intro { font-size: 10em;}
+
+.post-titles {
+  color:#42dca3;
+  font-size: 2em;
+}
+
+.post-bodies {
+  font-size: 1.5em;
+}
+
+.post-show {
+  width:90%;
+}
+
+.check-img {
+  width:20px;
+  height:auto;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.vote-img {
+  width: 60px;
+  height: auto;
+}
+
+.response-info {
+  /*border-bottom: 1px solid white;*/
+  margin-bottom: 15px;
+}
+
+.post-response-button {
+  border-radius:15px;
+  background-color:antiquewhite;
+  color:black;
+  font-weight:bold;
+  margin-bottom:1em;
+}
+
+.response-info button {
+  margin-top:.25em;
+  margin-left:2em;
+  border-radius:15px;
+  background-color:antiquewhite;
+  color:black;
+  font-weight:bold;
+  margin-bottom:1em;
+}
+
+.comment-section h3 {
+  margin-top:.5em;
+  margin-bottom:.5em;
+}
+
+.comment-detail {
+  margin-top:2em;
+  list-style-type: none;
+}
+
+.response-body {
+  font-size:24px;
+}
+
+.register h2 {
+  color:#42dca3;
+}
+
+.register input {
+  width:50%;
+  font-size:1.25em;
+  font-weight:500;
+}
+
+.register .btn-secondary {
+  width:10em;
+  margin-top:.25em;
+  margin-left:35%;
+  border-radius:15px;
+  background-color:antiquewhite;
+  color:black;
+  font-weight:bold;
+  margin-bottom:1em;
+}
+
+.login h2 {
+  color:#42dca3;
+}
+
+.login input {
+  width:50%;
+  font-size:1.25em;
+  font-weight:500;
+}
+
+.login .btn-secondary {
+  width:10em;
+  margin-top:.25em;
+  margin-left:35%;
+  border-radius:15px;
+  background-color:antiquewhite;
+  color:black;
+  font-weight:bold;
+  margin-bottom:1em;
+}
+
+.errors-wrapper {
+  font-size:1.5em;
+  font-weight:500;
+}
+
+.logout .btn-secondary {
+  width:10em;
+  margin-top:.25em;
+  margin-left:35%;
+  border-radius:15px;
+  background-color:antiquewhite;
+  color:black;
+  font-weight:bold;
+  margin-bottom:1em;
+}
+
+.new-post h2 {
+  color:#42dca3;
+}
+
+.new-post input {
+  width:50%;
+  font-size:1.25em;
+  font-weight:500;
+}
+
+.new-post .btn-secondary {
+  width:10em;
+  margin-top:.25em;
+  margin-left:84%;
+  border-radius:15px;
+  background-color:antiquewhite;
+  color:black;
+  font-weight:bold;
+  margin-bottom:1em;
+}
+
+.new-response h2 {
+  color:#42dca3;
+}
+
+.new-response input {
+  width:50%;
+  font-size:1.25em;
+  font-weight:500;
+}
+
+.new-response .btn-secondary {
+  width:12em;
+  margin-top:.25em;
+  margin-left:81%;
+  border-radius:15px;
+  background-color:antiquewhite;
+  color:black;
+  font-weight:bold;
+  margin-bottom:1em;
+}
+
+.rt {
+  margin-left:1em;
+}
+
+.post-list li {
+list-style: none;
+}
