@@ -10,7 +10,7 @@ $(".post-response-button").on("click", function(event) {
 $(".responder").on("click", function(event) {
   event.preventDefault();
   // var $pathname = $postId + "/responses/new"
-  $responseId = $(this).parent().parent().parent().attr("id");
+  $responseId = $(this).parent().parent().parent().parent().attr("id");
   $postId = $("article > div").attr("id");
   location.href = "/responses/" + $responseId + "/responses/new";
 })
