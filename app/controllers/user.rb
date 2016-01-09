@@ -21,6 +21,7 @@ end
 get '/users/:id' do
   @user = User.find(params[:id])
   if session[:user_id] == @user.id
+    @posts = @user.posts
     erb :'/users/show', :layout => :'alt_layout'
   else
     redirect :'/login'
