@@ -1,7 +1,8 @@
 <article>
+  <div id="<%= @post.id %>">
   <form action="/posts/<%= @post.id %>/responses/new" method="">
   <input class="btn btn-secondary post-response-button" type="submit" value="Add a response">
-  <div id="<%= @post.id %>">
+
       <div class="post-titles"><%= @post.title %></div>
       <br>
       <div class="post-bodies"><%= @post.body %></div>

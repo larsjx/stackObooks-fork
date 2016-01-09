@@ -5,9 +5,9 @@
     <% else %>
       <img src="/img/gray_check.png" class="check-img">
     <% end %>
-    <a href="" class="responder"><img src="/img/respond.png"></a><%= response.body %>
+    <%= response.body %>
   <div class="response-info">
-    <p><img src="/img/grn_arrow.png" class="vote-img">Votes: <span class="response-vote"><%= response.votes.count %></span> | Author: <span class="response-author"><%= response.user.username.capitalize %></span> | Posted on: <span class="response-date"><%= response.updated_at.strftime('%B %e, %Y') %></span><!-- <button class="btn btn-secondary response-button">Respond</button> -->
+    <p><img src="/img/grn_arrow.png" class="vote-img">Votes: <span class="response-vote"><%= response.votes.count %></span> | Author: <span class="response-author"><%= response.user.username.capitalize %></span> | Posted on: <span class="response-date"><%= response.updated_at.strftime('%B %e, %Y') %></span><!-- <button class="btn btn-secondary response-button">Respond</button> --><img class="responder" src="/img/respond.png">
     </p>
   </div>
 
@@ -16,7 +16,6 @@
       <%= erb :"/comments/show", locals: { response: response }%>
     <% end %>
   <% end %>
-
   </li>
 </ul>
 

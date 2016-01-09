@@ -7,7 +7,7 @@ $(".post-response-button").on("click", function(event) {
   location.href=$pathname;
 })
 
-$(".response-button").on("click", function(event) {
+$(".responder").on("click", function(event) {
   event.preventDefault();
   // var $pathname = $postId + "/responses/new"
   $responseId = $(this).parent().parent().parent().attr("id");
