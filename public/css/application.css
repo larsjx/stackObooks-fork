@@ -14,6 +14,7 @@ body { padding-top: 70px;}
 
 .post-bodies {
   font-size: 1.5em;
+  margin-top:.5em;
 }
 
 .post-show {
@@ -38,10 +39,6 @@ body { padding-top: 70px;}
   font-family:arial;
   color:#42dca3;
 }
-
-/*article {
-  margin-bottom:-1em;
-}*/
 
 .responder {
   width:40px;
@@ -207,4 +204,9 @@ hr {
     height: 1px;
     background: #ccc;
     /*background-image: linear-gradient(to right, #ccc, #333, #ccc);*/
+}
+
+.response-author a {
+  text-decoration: none;
+  color:white;
 }

@@ -2,6 +2,7 @@
   <% @posts.each do |post| %>
     <li><a class="post-titles" href = <%="/posts/#{post.id}"%> ><%= post.title %></a>
       <br>
+      <span class="response-author"><a href=<%="/users/#{post.user.id}"%>><%= post.user.username.capitalize %></a></span> | <span class="response-date"><%= post.updated_at.strftime('%B %e, %Y') %>
       <p class="post-bodies"><%= post.body %></p></li>
   <% end %>
 </ul>

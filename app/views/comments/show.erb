@@ -13,7 +13,7 @@
       <% if current_user %>
         <img src="/img/grn_arrow.png" class="vote-img">
       <% end %>
-      Votes: <span class="response-vote"><%= response.votes.count %></span> | Author: <span class="response-author"><%= response.user.username.capitalize %></span> | Posted on: <span class="response-date"><%= response.updated_at.strftime('%B %e, %Y') %>
+       <span class="response-vote"><%= response.votes.count %> Votes</span> | <span class="response-author"><%= response.user.username.capitalize %></span> | <span class="response-date"><%= response.updated_at.strftime('%B %e, %Y') %>
       <% if current_user %>
         <img class="responder" src="/img/respond.png">
       <% end %>

@@ -5,6 +5,7 @@
     <input class="btn btn-secondary post-response-button" type="submit" value="Add a response">
   <% end %>
       <div class="post-titles"><%= @post.title %></div>
+      <span class="response-author"><%= @post.user.username.capitalize %></span> | <span class="response-date"><%= @post.updated_at.strftime('%B %e, %Y') %>
       <br>
       <div class="post-bodies"><%= @post.body %></div>
       <br>
