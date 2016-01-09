@@ -1,0 +1,30 @@
+<!-- <form action = "/login" method = "post">
+  <input placeholder = "Enter your username" type = "text" name ="username" >
+  <input placeholder = "Enter your password" type = "password" name = "password">
+  <input type = "submit" value = "Login">
+</form>
+ -->
+<div class="login">
+<h2>Login to StackOBooks</h2>
+<form action = "/login" method = "post">
+  <fieldset class="form-group">
+  <input class="form-control" placeholder = "Enter your username" type = "text" name ="username">
+</fieldset>
+  <fieldset class="form-group">
+  <input class="form-control" placeholder = "Enter your password" type = "password" name = "password">
+</fieldset>
+  <input type = "submit" value = "Login" class="btn btn-secondary">
+</form>
+<br>
+
+  <% if @errors %>
+    <div class="errors-wrapper">
+      <span>Your entry could not be saved:</span>
+      <ul class="errors">
+        <% @errors.each do |error| %>
+          <li class="error"><%= error %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,18 @@
+<article>
+  <form action="/posts/<%= @post.id %>/responses/new" method="">
+  <input class="btn btn-secondary post-response-button" type="submit" value="Add a response">
+  <div id="<%= @post.id %>">
+      <div class="post-titles"><%= @post.title %></div>
+      <br>
+      <div class="post-bodies"><%= @post.body %></div>
+      <br>
+  </div>
+  <hr>
+  <div class="comment-section">
+      <% if @post.responses.length > 0 %>
+        <% @post.responses.each do |response| %>
+          <%= erb :"/comments/show", locals: { response: response }%>
+        <% end %>
+      <% end %>
+  </div>
+</article>
